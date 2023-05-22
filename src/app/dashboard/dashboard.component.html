@@ -1,0 +1,7 @@
+<h2>Dashboard</h2>
+<div *ngIf="healthData">
+  <h3>Welcome, {{ healthData.username }}!</h3>
+  <p>Heart Rate: {{ healthData.heartRate }}</p>
+  <p>Blood Pressure: {{ healthData.bloodPressure }}</p>
+</div>
+<app-health-chart></app-health-chart>
